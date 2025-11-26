@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
 
-@import "tailwindcss/theme";
-@import "tailwindcss/utilities";
-
+@import "tailwindcss";
 
 
 header h1 {
