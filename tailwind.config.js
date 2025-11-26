@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx,html}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'poiret': ['"Poiret One"', 'cursive'],
+        'tourney': ['Tourney', 'cursive'],
+      },
+    },
   },
   plugins: [],
 }
