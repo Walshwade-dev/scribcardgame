@@ -1,21 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
-@import "tailwindcss";
+
+@import "tailwindcss/theme";
+@import "tailwindcss/utilities";
 
 
 
-header h1{
+header h1 {
   font-family: "Tourney", sans-serif;
   font-size: 2rem;
 }
 
-#deck-id, #remaining{
+#deck-id,
+#remaining {
   font-family: "Poiret One", cursive;
   font-size: 0.9rem;
   letter-spacing: 1px;
 }
 
 #computer-score-container,
-#player-score-container{
+#player-score-container {
   font-family: "Tourney", sans-serif;
   font-size: 2.5rem;
 }
