@@ -1,3 +1,5 @@
+import './style.css'; 
+
 const newGameBtn = document.getElementById('get-deck-btn');
 const deckIdEl = document.getElementById('deck-id');
 const remainingCardsEl = document.getElementById('remaining');
