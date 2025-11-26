@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-[#163832] text-[#daf1de]">
+  <header class="flex flex-col h-[20vh] md:flex-row mb-0.5">
+    <h1 class="font-bold text-2xl text-center py-4 md:mr-auto">Game of War</h1>
+    <div class="flex text-center w-12/12">
+      <span id="deck-id-container" class="w-7/12">
+        <span>Deck Id:</span>
+        <span id="deck-id" class="font-semibold text-yellow-400">abcd123</span>
+      </span>
+      <span class="flex-1 flex justify-start items-center">
+        <span>Remaining cards:</span>
+        <span id="remaining" class="px-1 font-semibold text-yellow-400">0</span>
+      </span>
+    </div>
+    <button class="absolute font-semibold rounded-tr-2xl rounded-br-2xl bg-yellow-300 text-[#051f20] px-4 py-1 top-28"
+      id="get-deck-btn">New Game</button>
+  </header>
+
+
+
+  <main class="relative  w-full h-[80vh] flex flex-col pt-1 align-middle items-center">
+    <span id='player-score-container' class="font-bold font-mono text-2xl">0</span>
+    <span id="player-score" class="my-1">Player Score:</span>
+    <div class="card-container flex flex-col gap-4">
+      <div class="card player-card w-[120px] h-[170px] bg-[#0b2b26] bg-cover bg-center bg-no-repeat rounded-lg"></div>
+      <div class="card computer-card w-[120px] h-[170px] bg-[#0b2b26] bg-cover bg-center bg-no-repeat rounded-lg"></div>
+    </div>
+    <span id="computer-score" class="my-1">Computer Score:</span>
+    <span id='computer-score-container' class="font-bold font-mono text-2xl">0</span>
+
+    <button
+      class="fixed bottom-0 bg-yellow-300/65 text-[#051f20] font-semibold cursor-pointer w-full py-2 tracking-wider"
+      id="draw-cards-btn" disabled>Draw cards</button>
+  </main>
+
+  <div id="round-modal" class="absolute top-[50%] left-0 right-0 text-center py-4 bg-red-500 font-bold hidden">
+    Round Modal
+  </div>
+
+  <script src="/src/main.js" type="module"></script>
+</body>
+
+</html>
